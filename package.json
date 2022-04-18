@@ -6,7 +6,7 @@
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag"
   },
   "devDependencies": {
     "@holazz/eslint-config": "*",
