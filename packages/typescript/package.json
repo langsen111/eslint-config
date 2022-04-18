@@ -1,10 +1,10 @@
 {
-  "name": "@antfu/eslint-config-ts",
+  "name": "@holazz/eslint-config-ts",
   "version": "0.20.6",
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
   "main": "index.js",
   "files": [
     "index.js"
@@ -17,11 +17,11 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0"
+    "@holazz/eslint-config-basic": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0"
   },
   "devDependencies": {
-    "eslint": "^8.12.0"
+    "eslint": "^8.13.0"
   }
 }

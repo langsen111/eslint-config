@@ -1,66 +1,25 @@
-# @antfu/eslint-config
+# @holazz/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@antfu/eslint-config)
+[![npm](https://img.shields.io/npm/v/@holazz/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@holazz/eslint-config)
 
-- Single quotes, no semi
-- Auto fix for formatting (aimed to be used standalone without Prettier)
-- TypeScript, Vue, React out-of-box
-- Lint also for json, yaml, markdown
-- Sorted imports, dangling commas for cleaner commit diff
-- Reasonable defaults, best practices, only one-line of config
+Forked from [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
 ## Usage
 
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @holazz/eslint-config
 ```
 
 ### Config `.eslintrc`
 
 ```json
 {
-  "extends": "@antfu"
+  "extends": "@holazz"
 }
 ```
-
-> You don't need `.eslintignore` normally as it has been provided by the preset.
-
-### Add script for package.json
-
-For example:
-
-```json
-{
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
-}
-```
-
-### Config VS Code auto fix
-
-Create `.vscode/settings.json`
-
-```json
-{
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
-}
-```
-
-## Check Also
-
-- [antfu/dotfiles](https://github.com/antfu/dotfiles) - My dotfiles
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings) - My VS Code settings
-- [antfu/eslint-config](https://github.com/antfu/eslint-config) - My ESLint config
-- [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
-- [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
 
 ## License
 
-MIT
+[MIT](./LICENSE) License © 2022 [zz](https://github.com/holazz)

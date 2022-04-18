@@ -1,10 +1,10 @@
 {
-  "name": "@antfu/eslint-config-basic",
+  "name": "@holazz/eslint-config-basic",
   "version": "0.20.6",
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
   "main": "index.js",
   "files": [
     "*.js"
@@ -16,21 +16,20 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "eslint-plugin-antfu": "workspace:*",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^6.2.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsonc": "^2.2.1",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-n": "^15.1.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-unicorn": "^41.0.1",
+    "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-yml": "^0.14.0",
     "jsonc-eslint-parser": "^2.1.0",
     "yaml-eslint-parser": "^0.5.0"
   },
   "devDependencies": {
-    "eslint": "^8.12.0"
+    "eslint": "^8.13.0"
   },
   "publishConfig": {
     "access": "public"
