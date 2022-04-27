@@ -186,23 +186,18 @@ module.exports = {
       anonymous: 'never',
       named: 'never',
     }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
 
     // es6
     'no-var': 'error',
-    'prefer-const': [
-      'error',
-      {
-        destructuring: 'any',
-        ignoreReadBeforeAssign: true,
-      },
-    ],
-    'prefer-arrow-callback': [
-      'error',
-      {
-        allowNamedFunctions: false,
-        allowUnboundThis: true,
-      },
-    ],
+    'prefer-const': ['error', {
+      destructuring: 'any',
+      ignoreReadBeforeAssign: true,
+    }],
+    'prefer-arrow-callback': ['error', {
+      allowNamedFunctions: false,
+      allowUnboundThis: true,
+    }],
     'object-shorthand': [
       'error',
       'always',
@@ -278,15 +273,13 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'n/no-callback-literal': 'off',
 
-    'sort-imports': [
-      'error',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-        allowSeparatedGroups: false,
-      },
+    'sort-imports': ['error', {
+      ignoreCase: false,
+      ignoreDeclarationSort: true,
+      ignoreMemberSort: false,
+      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+      allowSeparatedGroups: false,
+    },
     ],
 
     // yml
