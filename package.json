@@ -1,6 +1,6 @@
 {
   "name": "@holazz/eslint-config-monorepo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "license": "MIT",
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
