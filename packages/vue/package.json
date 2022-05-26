@@ -2,9 +2,9 @@
   "name": "@holazz/eslint-config-vue",
   "version": "1.0.7",
   "description": "",
-  "keywords": [],
-  "license": "MIT",
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
+  "license": "MIT",
+  "keywords": [],
   "main": "index.js",
   "files": [
     "index.js"

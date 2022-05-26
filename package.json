@@ -3,8 +3,8 @@
   "version": "1.0.7",
   "private": true,
   "packageManager": "pnpm@7.1.0",
-  "license": "MIT",
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag"
