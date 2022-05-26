@@ -2,6 +2,7 @@
   "name": "@holazz/eslint-config-monorepo",
   "version": "1.0.7",
   "private": true,
+  "packageManager": "pnpm@7.1.0",
   "license": "MIT",
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
   "scripts": {
@@ -11,7 +12,7 @@
   "devDependencies": {
     "@holazz/eslint-config": "*",
     "bumpp": "^7.1.1",
-    "eslint": "^8.14.0",
-    "typescript": "^4.6.3"
+    "eslint": "^8.16.0",
+    "typescript": "^4.7.2"
   }
 }
