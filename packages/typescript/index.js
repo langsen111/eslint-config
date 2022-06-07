@@ -1,6 +1,8 @@
+// @ts-check
+const { defineConfig } = require('eslint-define-config')
 const basic = require('@holazz/eslint-config-basic')
 
-module.exports = {
+module.exports = defineConfig({
   extends: [
     '@holazz/eslint-config-basic',
     'plugin:import/typescript',
@@ -115,4 +117,4 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
   },
-}
+})

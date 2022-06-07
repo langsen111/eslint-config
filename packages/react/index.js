@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+const { defineConfig } = require('eslint-define-config')
+
+module.exports = defineConfig({
   extends: [
     'plugin:react/recommended',
     '@holazz/eslint-config-ts',
@@ -15,4 +18,4 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off',
   },
-}
+})
