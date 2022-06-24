@@ -12,7 +12,12 @@ module.exports = defineConfig({
         singleQuote: true,
         trailingComma: 'all',
         arrowParens: 'avoid',
+        quoteProps: 'preserve',
       },
     ],
+    'curly': ['error', 'multi-or-nest', 'consistent'],
+    'quote-props': ['error', 'consistent-as-needed'],
+    'no-tabs': 'error',
+    'no-unexpected-multiline': 'error',
   },
 })

@@ -13,6 +13,7 @@
     "@holazz/eslint-config": "*",
     "bumpp": "^7.1.1",
     "eslint": "^8.17.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.3"
   }
 }
