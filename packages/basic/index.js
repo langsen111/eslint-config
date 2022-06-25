@@ -18,6 +18,7 @@ module.exports = defineConfig({
   ],
   ignorePatterns: [
     '*.min.*',
+    '*.d.ts',
     'CHANGELOG.md',
     'dist',
     'LICENSE*',
