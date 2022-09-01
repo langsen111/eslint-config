@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@holazz/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.27.1",
-    "@typescript-eslint/parser": "^5.27.1",
-    "eslint-define-config": "^1.5.1"
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint-define-config": "^1.7.0"
   },
   "devDependencies": {
-    "eslint": "^8.17.0"
+    "eslint": "^8.23.0"
   }
 }
