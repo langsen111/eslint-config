@@ -16,10 +16,7 @@ module.exports = defineConfig({
       },
     },
   ],
-  extends: [
-    'plugin:vue/vue3-recommended',
-    '@holazz/eslint-config-ts',
-  ],
+  extends: ['plugin:vue/vue3-recommended', '@holazz/eslint-config-ts'],
   rules: {
     'vue/max-attributes-per-line': 'off',
     'vue/no-v-html': 'off',
@@ -31,22 +28,35 @@ module.exports = defineConfig({
     // reactivity transform
     'vue/no-setup-props-destructure': 'off',
 
-    'vue/component-tags-order': ['error', {
-      order: ['script', 'template', 'style'],
-    }],
-    'vue/block-tag-newline': ['error', {
-      singleline: 'always',
-      multiline: 'always',
-    }],
+    'vue/component-tags-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style'],
+      },
+    ],
+    'vue/block-tag-newline': [
+      'error',
+      {
+        singleline: 'always',
+        multiline: 'always',
+      },
+    ],
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
-    'vue/define-macros-order': ['error', {
-      order: ['defineProps', 'defineEmits'],
-    }],
-    'vue/html-comment-content-spacing': ['error', 'always', {
-      exceptions: ['-'],
-    }],
+    'vue/define-macros-order': [
+      'error',
+      {
+        order: ['defineProps', 'defineEmits'],
+      },
+    ],
+    'vue/html-comment-content-spacing': [
+      'error',
+      'always',
+      {
+        exceptions: ['-'],
+      },
+    ],
     'vue/no-restricted-v-bind': ['error', '/^v-/'],
     'vue/no-useless-v-bind': 'error',
     'vue/no-v-text-v-html-on-component': 'error',
@@ -79,9 +89,15 @@ module.exports = defineConfig({
       'WithStatement',
     ],
     'vue/no-sparse-arrays': 'error',
-    'vue/object-curly-newline': ['error', { multiline: true, consistent: true }],
+    'vue/object-curly-newline': [
+      'error',
+      { multiline: true, consistent: true },
+    ],
     'vue/object-curly-spacing': ['error', 'always'],
-    'vue/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
+    'vue/object-property-newline': [
+      'error',
+      { allowMultiplePropertiesPerLine: true },
+    ],
     'vue/object-shorthand': [
       'error',
       'always',
@@ -92,7 +108,7 @@ module.exports = defineConfig({
     ],
     'vue/operator-linebreak': ['error', 'before'],
     'vue/prefer-template': 'error',
-    'vue/quote-props': ['error', 'consistent-as-needed'],
+    'vue/quote-props': ['error', 'as-needed'],
     'vue/space-in-parens': ['error', 'never'],
     'vue/space-infix-ops': 'error',
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],

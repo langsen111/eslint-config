@@ -18,6 +18,7 @@ importers:
 
   packages/all:
     specifiers:
+      '@holazz/eslint-config-prettier': workspace:*
       '@holazz/eslint-config-react': workspace:*
       '@holazz/eslint-config-vue': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.38.0
@@ -36,6 +37,7 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
+      '@holazz/eslint-config-prettier': link:../prettier
       '@holazz/eslint-config-react': link:../react
       '@holazz/eslint-config-vue': link:../vue
       '@typescript-eslint/eslint-plugin': 5.38.0_cxqatnnjiq7ozd2bkspxnuicdq

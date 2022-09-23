@@ -34,10 +34,7 @@ module.exports = defineConfig({
     '!.vitepress',
     '!.vscode',
   ],
-  plugins: [
-    'html',
-    'unicorn',
-  ],
+  plugins: ['html', 'unicorn'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -52,11 +49,20 @@ module.exports = defineConfig({
         'jsonc/comma-dangle': ['error', 'never'],
         'jsonc/comma-style': ['error', 'last'],
         'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+        'jsonc/key-spacing': [
+          'error',
+          { beforeColon: false, afterColon: true },
+        ],
         'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
+        'jsonc/object-curly-newline': [
+          'error',
+          { multiline: true, consistent: true },
+        ],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
+        'jsonc/object-property-newline': [
+          'error',
+          { allowMultiplePropertiesPerLine: true },
+        ],
       },
     },
     {
@@ -126,11 +132,7 @@ module.exports = defineConfig({
           },
           {
             pathPattern: '^exports.*$',
-            order: [
-              'types',
-              'require',
-              'import',
-            ],
+            order: ['types', 'require', 'import'],
           },
         ],
       },
@@ -184,23 +186,37 @@ module.exports = defineConfig({
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
-    'import/order': ['error', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
-      pathGroups: [{ pattern: '@/**', group: 'internal' }, { pattern: '~/**', group: 'internal' }],
-      pathGroupsExcludedImportTypes: ['type'],
-    }],
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        pathGroups: [
+          { pattern: '@/**', group: 'internal' },
+          { pattern: '~/**', group: 'internal' },
+        ],
+        pathGroupsExcludedImportTypes: ['type'],
+      },
+    ],
 
     // Common
-    'semi': ['error', 'never'],
-    'curly': ['error', 'multi-or-nest', 'consistent'],
-    'quotes': ['error', 'single'],
-    'quote-props': ['error', 'consistent-as-needed'],
+    semi: ['error', 'never'],
+    curly: ['error', 'multi-or-nest', 'consistent'],
+    quotes: ['error', 'single'],
     'no-unused-vars': 'warn',
     'no-param-reassign': 'off',
     'array-bracket-spacing': ['error', 'never'],
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
     'block-spacing': ['error', 'always'],
-    'camelcase': 'off',
+    camelcase: 'off',
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
     'comma-dangle': ['error', 'always-multiline'],
@@ -210,7 +226,11 @@ module.exports = defineConfig({
     'no-cond-assign': ['error', 'always'],
     'func-call-spacing': ['error', 'never'],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-    'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
+    indent: [
+      'error',
+      2,
+      { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 },
+    ],
     'no-restricted-syntax': [
       'error',
       'DebuggerStatement',
@@ -219,22 +239,31 @@ module.exports = defineConfig({
     ],
     'object-curly-spacing': ['error', 'always'],
     'no-return-await': 'off',
-    'space-before-function-paren': ['error', {
-      anonymous: 'never',
-      named: 'never',
-    }],
+    'space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'never',
+        named: 'never',
+      },
+    ],
     'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 1 }],
 
     // es6
     'no-var': 'error',
-    'prefer-const': ['error', {
-      destructuring: 'any',
-      ignoreReadBeforeAssign: true,
-    }],
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
-    }],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
+      },
+    ],
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
+      },
+    ],
     'object-shorthand': [
       'error',
       'always',
@@ -250,24 +279,28 @@ module.exports = defineConfig({
     'template-curly-spacing': 'error',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'generator-star-spacing': 'off',
-    'spaced-comment': ['error', 'always', {
-      line: {
-        markers: ['/'],
-        exceptions: ['/', '#'],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
       },
-      block: {
-        markers: ['!'],
-        exceptions: ['*'],
-        balanced: true,
-      },
-    }],
+    ],
 
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'consistent-return': 'off',
-    'complexity': ['off', 11],
-    'eqeqeq': ['error', 'smart'],
+    complexity: ['off', 11],
+    eqeqeq: ['error', 'smart'],
     'no-alert': 'warn',
     'no-case-declarations': 'error',
     'no-multi-spaces': 'error',
@@ -304,20 +337,25 @@ module.exports = defineConfig({
     // Use new when throwing error
     'unicorn/throw-new-error': 'error',
 
-    'no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
+    'no-use-before-define': [
+      'error',
+      { functions: false, classes: false, variables: true },
+    ],
     'eslint-comments/disable-enable-pair': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
     'import/namespace': 'off',
     'n/no-callback-literal': 'off',
 
-    'sort-imports': ['error', {
-      ignoreCase: false,
-      ignoreDeclarationSort: true,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-      allowSeparatedGroups: false,
-    },
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: false,
+      },
     ],
 
     // yml
