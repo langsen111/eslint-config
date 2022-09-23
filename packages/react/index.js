@@ -4,6 +4,7 @@ const { defineConfig } = require('eslint-define-config')
 module.exports = defineConfig({
   extends: [
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     '@holazz/eslint-config-ts',
   ],
   settings: {
