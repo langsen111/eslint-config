@@ -294,6 +294,7 @@ module.exports = defineConfig({
         },
       },
     ],
+    'symbol-description': 'off',
 
     // best-practice
     'array-callback-return': 'error',
