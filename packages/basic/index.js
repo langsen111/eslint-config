@@ -295,6 +295,7 @@ module.exports = defineConfig({
       },
     ],
     'symbol-description': 'off',
+    'no-unreachable-loop': 'off',
 
     // best-practice
     'array-callback-return': 'error',
