@@ -17,13 +17,13 @@
   },
   "dependencies": {
     "@holazz/eslint-config-ts": "workspace:*",
-    "eslint-define-config": "^1.7.0",
-    "eslint-plugin-react": "^7.31.8",
+    "eslint-define-config": "^1.12.0",
+    "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.1",
+    "eslint": "^8.30.0",
     "react": "^18.2.0",
-    "typescript": "^4.8.3"
+    "typescript": "^4.9.4"
   }
 }
