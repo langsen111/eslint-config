@@ -5,11 +5,12 @@ module.exports = defineConfig({
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     '@holazz/eslint-config-ts',
   ],
   settings: {
     react: {
-      version: '17.0',
+      version: 'detect',
     },
   },
   rules: {
