@@ -1,5 +1,13 @@
 // @ts-check
 const { defineConfig } = require('eslint-define-config')
+const { isPackageExists } = require('local-pkg')
+
+const TS = isPackageExists('typescript')
+
+if (!TS)
+  console.warn(
+    '[@holazz/eslint-config] TypeScript is not installed, fallback to JS only.'
+  )
 
 module.exports = defineConfig({
   overrides: [
@@ -12,11 +20,14 @@ module.exports = defineConfig({
       rules: {
         'no-unused-vars': 'off',
         'no-undef': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
+        ...(TS ? { '@typescript-eslint/no-unused-vars': 'off' } : null),
       },
     },
   ],
-  extends: ['plugin:vue/vue3-recommended', '@holazz/eslint-config-ts'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    TS ? '@holazz/eslint-config-ts' : '@holazz/eslint-config-basic',
+  ],
   rules: {
     'vue/max-attributes-per-line': 'off',
     'vue/no-v-html': 'off',
