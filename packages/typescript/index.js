@@ -1,6 +1,10 @@
 // @ts-check
+const { existsSync } = require('fs')
+const { join } = require('path')
 const { defineConfig } = require('eslint-define-config')
 const basic = require('@holazz/eslint-config-basic')
+
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = defineConfig({
   extends: [
@@ -13,7 +17,35 @@ module.exports = defineConfig({
       node: { extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', '.d.ts'] },
     },
   },
-  overrides: basic.overrides,
+  overrides: basic.overrides?.concat(
+    !existsSync(join(process.cwd(), tsconfig))
+      ? []
+      : [
+          {
+            parserOptions: {
+              tsconfigRootDir: process.cwd(),
+              project: [tsconfig],
+            },
+            parser: '@typescript-eslint/parser',
+            excludedFiles: '**/*.md/*.*',
+            files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+            rules: {
+              'no-throw-literal': 'off',
+              '@typescript-eslint/no-throw-literal': 'error',
+              'no-implied-eval': 'off',
+              '@typescript-eslint/no-implied-eval': 'error',
+              'dot-notation': 'off',
+              '@typescript-eslint/dot-notation': [
+                'error',
+                { allowKeywords: true },
+              ],
+              'no-void': ['error', { allowAsStatement: true }],
+              '@typescript-eslint/no-floating-promises': 'error',
+              '@typescript-eslint/no-misused-promises': 'error',
+            },
+          },
+        ]
+  ),
   rules: {
     'import/named': 'off',
 
