@@ -16,5 +16,7 @@ module.exports = defineConfig({
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+    'react-hooks/exhaustive-deps': 'error',
   },
 })
