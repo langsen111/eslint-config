@@ -1,12 +1,12 @@
 {
-  "name": "@holazz/eslint-config",
+  "name": "@tioks/eslint-config",
   "version": "1.4.9",
   "description": "",
-  "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
+  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holazz/eslint-config.git",
+    "url": "git+https://github.com/Tioks/eslint-config.git",
     "directory": "packages/all"
   },
   "keywords": [],
@@ -18,9 +18,9 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@holazz/eslint-config-prettier": "workspace:*",
-    "@holazz/eslint-config-react": "workspace:*",
-    "@holazz/eslint-config-vue": "workspace:*",
+    "@tioks/eslint-config-prettier": "workspace:*",
+    "@tioks/eslint-config-react": "workspace:*",
+    "@tioks/eslint-config-vue": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint-define-config": "^1.24.1",
