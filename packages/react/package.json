@@ -1,12 +1,12 @@
 {
-  "name": "@holazz/eslint-config-react",
+  "name": "@tioks/eslint-config-react",
   "version": "1.4.9",
   "description": "",
-  "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
+  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holazz/eslint-config.git",
+    "url": "git+https://github.com/tioks/eslint-config.git",
     "directory": "packages/react"
   },
   "keywords": [],
@@ -21,7 +21,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@holazz/eslint-config-ts": "workspace:*",
+    "@tioks/eslint-config-ts": "workspace:*",
     "eslint-define-config": "^1.24.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
