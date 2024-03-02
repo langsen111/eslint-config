@@ -1,20 +1,20 @@
 {
-  "name": "@holazz/eslint-config-monorepo",
+  "name": "@tioks/eslint-config-monorepo",
   "version": "1.4.9",
   "private": true,
   "packageManager": "pnpm@7.1.0",
-  "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
+  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holazz/eslint-config.git"
+    "url": "git+https://github.com/tioks/eslint-config.git"
   },
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag"
   },
   "devDependencies": {
-    "@holazz/eslint-config": "*",
+    "@tioks/eslint-config": "*",
     "bumpp": "^9.2.0",
     "eslint": "^8.51.0",
     "prettier": "^3.0.3",
