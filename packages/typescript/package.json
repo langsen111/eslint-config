@@ -4,6 +4,11 @@
   "description": "",
   "author": "zz <2418184580@qq.com> (https://github.com/holazz/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holazz/eslint-config.git",
+    "directory": "packages/typescript"
+  },
   "keywords": [],
   "main": "index.js",
   "files": [
