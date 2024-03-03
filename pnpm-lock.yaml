@@ -8,7 +8,7 @@ importers:
 
   .:
     devDependencies:
-      '@holazz/eslint-config':
+      '@tioks/eslint-config':
         specifier: '*'
         version: link:packages/all
       bumpp:
@@ -29,13 +29,13 @@ importers:
 
   packages/all:
     dependencies:
-      '@holazz/eslint-config-prettier':
+      '@tioks/eslint-config-prettier':
         specifier: workspace:*
         version: link:../prettier
-      '@holazz/eslint-config-react':
+      '@tioks/eslint-config-react':
         specifier: workspace:*
         version: link:../react
-      '@holazz/eslint-config-vue':
+      '@tioks/eslint-config-vue':
         specifier: workspace:*
         version: link:../vue
       '@typescript-eslint/eslint-plugin':
@@ -130,7 +130,7 @@ importers:
 
   packages/prettier:
     dependencies:
-      '@holazz/eslint-config-basic':
+      '@tioks/eslint-config-basic':
         specifier: workspace:*
         version: link:../basic
       eslint-config-prettier:
@@ -152,7 +152,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@holazz/eslint-config-ts':
+      '@tioks/eslint-config-ts':
         specifier: workspace:*
         version: link:../typescript
       eslint-define-config:
@@ -180,7 +180,7 @@ importers:
 
   packages/typescript:
     dependencies:
-      '@holazz/eslint-config-basic':
+      '@tioks/eslint-config-basic':
         specifier: workspace:*
         version: link:../basic
       '@typescript-eslint/eslint-plugin':
@@ -202,7 +202,7 @@ importers:
 
   packages/vue:
     dependencies:
-      '@holazz/eslint-config-ts':
+      '@tioks/eslint-config-ts':
         specifier: workspace:*
         version: link:../typescript
       eslint-define-config:
