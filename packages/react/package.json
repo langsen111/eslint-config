@@ -1,12 +1,12 @@
 {
   "name": "@tioks/eslint-config-react",
-  "version": "1.4.10",
+  "version": "1.4.11",
   "description": "",
   "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tioks/eslint-config.git",
+    "url": "https://github.com/tioks/eslint-config.git",
     "directory": "packages/react"
   },
   "keywords": [],
