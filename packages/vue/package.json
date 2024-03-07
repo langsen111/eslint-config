@@ -1,12 +1,12 @@
 {
   "name": "@tioks/eslint-config-vue",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "description": "",
   "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tioks/eslint-config.git",
+    "url": "https://github.com/Tioks/eslint-config",
     "directory": "packages/vue"
   },
   "keywords": [],
