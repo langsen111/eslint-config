@@ -1,6 +1,6 @@
 {
   "name": "@tioks/eslint-config-monorepo",
-  "version": "1.4.14",
+  "version": "1.4.15",
   "private": true,
   "packageManager": "pnpm@7.1.0",
   "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
