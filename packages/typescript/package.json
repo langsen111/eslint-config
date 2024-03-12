@@ -1,12 +1,12 @@
 {
-  "name": "@tioks/eslint-config-ts",
+  "name": "@langsen111/eslint-config-ts",
   "version": "1.4.15",
   "description": "",
-  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
+  "author": "langsen111 <aiyslm@foxmail.com> (https://github.com/langsen111/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tioks/eslint-config",
+    "url": "https://github.com/langsen111/eslint-config",
     "directory": "packages/typescript"
   },
   "keywords": [],
@@ -19,7 +19,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@tioks/eslint-config-basic": "workspace:*",
+    "@langsen111/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint-define-config": "^1.24.1"

@@ -1,12 +1,12 @@
 {
-  "name": "@tioks/eslint-config-react",
+  "name": "@langsen111/eslint-config-react",
   "version": "1.4.15",
   "description": "",
-  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
+  "author": "langsen111 <aiyslm@foxmail.com> (https://github.com/langsen111/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tioks/eslint-config",
+    "url": "https://github.com/langsen111/eslint-config",
     "directory": "packages/react"
   },
   "keywords": [],
@@ -21,7 +21,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@tioks/eslint-config-ts": "workspace:*",
+    "@langsen111/eslint-config-ts": "workspace:*",
     "eslint-define-config": "^1.24.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",

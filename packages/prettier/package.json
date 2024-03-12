@@ -1,12 +1,12 @@
 {
-  "name": "@tioks/eslint-config-prettier",
+  "name": "@langsen111/eslint-config-prettier",
   "version": "1.4.15",
   "description": "",
-  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
+  "author": "langsen111 <aiyslm@foxmail.com> (https://github.com/langsen111/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tioks/eslint-config.git",
+    "url": "https://github.com/langsen111/eslint-config.git",
     "directory": "packages/prettier"
   },
   "keywords": [],
@@ -19,7 +19,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@tioks/eslint-config-basic": "workspace:*",
+    "@langsen111/eslint-config-basic": "workspace:*",
     "eslint-config-prettier": "^9.0.0",
     "eslint-define-config": "^1.24.1",
     "eslint-plugin-prettier": "^5.0.1"

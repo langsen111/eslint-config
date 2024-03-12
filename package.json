@@ -1,20 +1,20 @@
 {
-  "name": "@tioks/eslint-config-monorepo",
+  "name": "@langsen111/eslint-config-monorepo",
   "version": "1.4.15",
   "private": true,
   "packageManager": "pnpm@7.1.0",
-  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
+  "author": "langsen111 <aiyslm@foxmail.com> (https://github.com/langsen111/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tioks/eslint-config"
+    "url": "https://github.com/langsen111/eslint-config"
   },
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag"
   },
   "devDependencies": {
-    "@tioks/eslint-config": "*",
+    "@langsen111/eslint-config": "*",
     "bumpp": "^9.2.0",
     "eslint": "^8.51.0",
     "prettier": "^3.0.3",

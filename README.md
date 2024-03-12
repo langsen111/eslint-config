@@ -1,4 +1,4 @@
-# @tioks/eslint-config
+# @langsen111/eslint-config
 
 [![npm](https://img.shields.io/npm/v/@holazz/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@holazz/eslint-config)
 
@@ -9,7 +9,7 @@ Forked from [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 ### Install
 
 ```bash
-pnpm add -D eslint @tioks/eslint-config
+pnpm add -D eslint @langsen111/eslint-config
 ```
 
 ### Config `.eslintrc`

@@ -1,12 +1,12 @@
 {
-  "name": "@tioks/eslint-config-basic",
+  "name": "@langsen111/eslint-config-basic",
   "version": "1.4.15",
   "description": "",
-  "author": "tioks <644697896@qq.com> (https://github.com/Tioks/)",
+  "author": "langsen111 <aiyslm@foxmail.com> (https://github.com/langsen111/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tioks/eslint-config",
+    "url": "https://github.com/langsen111/eslint-config",
     "directory": "packages/basic"
   },
   "keywords": [],
