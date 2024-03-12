@@ -16,10 +16,10 @@ pnpm add -D eslint @langsen111/eslint-config
 
 ```json
 {
-  "extends": "@tioks"
+  "extends": "@langsen111"
 }
 ```
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Tioks](https://github.com/Tioks)
+[MIT](./LICENSE) License © 2022 [Langsen111](https://github.com/Langsen111)
